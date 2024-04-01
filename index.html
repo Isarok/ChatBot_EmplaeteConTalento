@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatBot Empleate con talento</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Chatbot in JavaScript | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts Link For Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+
 </head>
+
 <body>
+
+
+  <button class="chatbot-toggler">
+    <span class="material-symbols-rounded">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hola 👋 De que desea información? <br>Busqueda de empleo<br>Formación<br>Emprendimiento</p>
+
+
+      </li>
+
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Message" spellcheck="false" disabled></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+
+
+      <div class="buttons-container">
+
+        <div id="buttons1" class="button-container">
+          <button class="button" id="button1" onclick="showButtons('buttonsEnterprise')"
+            value="Emprendimiento">Emprendimiento</button>
+          <button class="button" id="button2" onclick="showButtons('buttonsEducation')" value="Formación">Formación</button>
+          <button class="button" id="button3" onclick="showButtons('buttonsWork1')" value="Busqueda de empleo">Busqueda de
+            empleo</button>
+        </div>
+        <!-- Botones de Emprendimiento -->
+        <div id="buttonsEnterprise" class="button-container hidden">
+          <button class="button" onclick="showButtons('buttonsMail')" value="Emprendimiento">???</button>
+          <button class="button" onclick="showButtons('buttonsMail')" value="Emprendimiento">???</button>
+        </div>
     
+        <!-- Botones de Formacion -->
+        <div id="buttonsEducation" class="button-container hidden">
+          <button class="button" onclick="showButtons('buttonsEducation2')" value="Emprendimiento">Desempleado</button>
+          <button class="button" onclick="showButtons('buttonsEducation2')" value="Formación">Trabajando</button>
+          <button class="button" onclick="showButtons('buttonsEducation2')" value="Busqueda de empleo">Emprendiendo</button>
+          <button class="button" onclick="showButtons('buttonsEducation2')" value="Busqueda de empleo">Menor de 35
+            años</button>
+        </div>
+    
+        <div id="buttonsEducation2" class="button-container hidden">
+          <button class="button" onclick="showButtons('buttonsEducation3')" value="Emprendimiento">Aprender inglés</button>
+          <button class="button" onclick="showButtons('buttonsEducation3')" value="Formación">Estudiar un master o
+            bootcamp</button>
+          <button class="button" onclick="showButtons('buttonsEducation3')" value="Busqueda de empleo">Becas y ayudas al
+            estudio</button>
+        </div>
+        <div id="buttonsEducation3" class="button-container hidden">
+          <button class="button" onclick="showButtons('buttonsMail')" value="Emprendimiento">Sí</button>
+          <button class="button" onclick="showButtons('buttonsMail')" value="Formación">No</button>
+        </div>
+    
+        <!--   Botones empleo-->
+        <div id="buttonsWork1" class="button-container hidden" alt="Cuantos años de experiencia profesional">
+          <button class="button" value="more2" onclick="showButtons('buttonsWork2')">Más de 2 años</button>
+          <button class="button" value="less2" onclick="showButtons('buttonsWork2')">Menos de 2 años</button>
+        </div>
+        <div id="buttonsWork2" class="button-container hidden" alt="Que aspectos necesitas mejorar">
+          <button class="button" value="more2" onclick="showButtons('buttonsMail')">Curriculum</button>
+          <button class="button" value="less2" onclick="showButtons('buttonsMail')">Carta de presentación</button>
+          <button class="button" value="less2" onclick="showButtons('buttonsMail')">Linkedin</button>
+          <button class="button" value="less2" onclick="showButtons('buttonsMail')">Entrvistas</button>
+        </div>
+        <div id="buttonsMail" class="button-container hidden" alt="Quieres que te enviemos estos contenidos a tu email?">
+          <button class="button" value="more2" onclick="showButtons('')">Si</button>
+          <button class="button" value="less2" onclick="showButtons('')">No</button>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" defer> </script>
 </body>
-<script src="script.js"></script>
+
 </html>
