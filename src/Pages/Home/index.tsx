@@ -1,4 +1,4 @@
-const Home = () => {
+const Home = () => { 
     return (
       <div>
         Hola soy la Homi 🤖
@@ -6,4 +6,4 @@ const Home = () => {
     )
   }
   
-  export default Home
+  export default Home 
