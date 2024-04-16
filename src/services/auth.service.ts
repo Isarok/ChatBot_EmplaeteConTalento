@@ -37,9 +37,7 @@ export const login = async (email: string, password: string) => {
       password,
     });
     console.log(response.status);
-    console.log(response.data); /* 
-    const { token, user } = response.data;
-    localStorage.setItem("token", JSON.stringify({ token, user })); */
+    console.log(response.data);
     return response;
   } catch (error) {
     console.log("Error en el registro:", error);
