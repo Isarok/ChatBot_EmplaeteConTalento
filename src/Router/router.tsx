@@ -1,23 +1,25 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home  from "../Pages/Home";
+import Home from "../Pages/Home";
 import GameCard from "../Pages/GameCard";
 import GameMillonaire from "../Pages/GameMillonaire";
-import '../index.css';
+import Contact from "../Components/Contact";
+import "../index.css";
 
 export const router = createBrowserRouter([
-            {
-                path: "/",
-                element: <Home />,
-               
-            },
-            {
-                path: "/GameCard",
-                element: <GameCard />,
-            }, 
-            {
-                path: "/GameMillonaire",
-                element: <GameMillonaire />,
-            }
-          
-   
-])  
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/GameCard",
+    element: <GameCard />,
+  },
+  {
+    path: "/GameMillonaire",
+    element: <GameMillonaire />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+]);

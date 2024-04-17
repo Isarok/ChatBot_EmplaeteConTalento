@@ -1,4 +1,4 @@
-import  { useRef, useState } from 'react';
+/* import  { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './style.css';
 
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
         <label>Message</label>
         <textarea name="message" value={formData.message} onChange={handleChange} />
         <input type="submit" value="Send" />
-        {error && <div className="error">{error}</div>} {/* Mostrar el mensaje de error si está presente */}
+        {error && <div className="error">{error}</div>} 
       </form>
     );
   };
@@ -61,4 +61,96 @@ const Contact: React.FC = () => {
 
 
 
-//sendForm('service_rhmcrld', 'template_s8k0j7q', formData, 'TVETq8hbmSmqu94a6')
+//sendForm('service_rhmcrld', 'template_s8k0j7q', formData, 'TVETq8hbmSmqu94a6') */
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
+const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    from_name: "",
+    to_name: "",
+    message: "",
+    to_email: "",
+    reply_to: "",
+  });
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const serviceID = "default_service";
+    const templateID = "template_0j5jzgj";
+    const publicKey = "Uhrzp0wG07AwnFgvq";
+
+    emailjs
+      .sendForm(serviceID, templateID, event.currentTarget, publicKey)
+      .then(
+        () => {
+          alert("Sent!");
+        },
+        (err) => {
+          alert(JSON.stringify(err));
+        }
+      );
+  };
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleTextareaChange = (
+    event: React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  return (
+    <form id="form" onSubmit={handleSubmit}>
+      <div className="field">
+        <label htmlFor="from_name">From Name</label>
+        <input
+          type="text"
+          name="from_name"
+          id="from_name"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="field">
+        <label htmlFor="to_name">To Name</label>
+        <input
+          type="text"
+          name="to_name"
+          id="to_name"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="field">
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" onChange={handleTextareaChange} />
+      </div>
+      <div className="field">
+        <label htmlFor="to_email">To Email</label>
+        <input
+          type="text"
+          name="to_email"
+          id="to_email"
+          onChange={handleInputChange}
+        />
+      </div>
+      <div className="field">
+        <label htmlFor="reply_to">Reply To</label>
+        <input
+          type="text"
+          name="reply_to"
+          id="reply_to"
+          onChange={handleInputChange}
+        />
+      </div>
+
+      <input type="submit" id="button" value="Send Email" />
+    </form>
+  );
+};
+
+export default Contact;
