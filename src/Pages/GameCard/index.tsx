@@ -32,7 +32,7 @@ const Game: React.FC = () => {
       
 
       {/* Cards a la izquierda */}
-      <div className="w-[65%] md:-\[65\%\] flex flex-wrap md:flex-wrap">
+      <div className="w-[65%] md:-\[65\%\] flex flex-wrap md:flex-wrap lg:flex">
         {competencias.map((competencia) => (
           <div key={competencia.title} className="w-full md:w-1/4 p-2">
             <Card

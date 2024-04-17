@@ -72,3 +72,40 @@ body {
 .card.flipped .back {
   transform: perspective(600px) rotateY(0deg);
 }
+
+/* Media queries para diferentes tamaños de pantalla */
+/* @media (max-width: 768px) {
+  
+  .card {
+    width: 80px;
+    height: 180px;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .card {
+    width: 120px;
+    height: 264px;
+    margin: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+ 
+  .card {
+    width: 160px;
+    height: 264px;
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 1480px) {
+  
+  .card {
+    width: 260px;
+    height: 448px;
+    margin: 2.5rem;
+  }
+} */

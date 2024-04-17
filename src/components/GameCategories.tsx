@@ -22,7 +22,7 @@ const Games = () => {
           </div>
         </div>
         <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-start p-5">
-          <Link to="/blue-page" className="link-wrapper">
+          <Link to="/GameCard" className="link-wrapper">
             <div className="image-link bg-blue-500 hover:bg-blue-700 flex items-center justify-center w-28 h-28 text-white font-bold rounded-full">
               <img src={Formacion} alt="" className="w-1/2 h-1/2" />
             </div>
