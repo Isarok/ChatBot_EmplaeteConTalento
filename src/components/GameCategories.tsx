@@ -5,11 +5,9 @@ import { Link } from "react-router-dom";
 
 const Games = () => {
   return (
-    <section className="font-sans lg:w-1/2 backdrop-blur-2xl pt-10 flex flex-col items-center gap-20 rounded-lg border border-gray-300">
-      <div>
-        <h1>¡JUGUEMOS!</h1>
-      </div>
+    <section className="font-sans lgl:w-1/3 lg:w-1/2 backdrop-blur-2xl pt-5 flex flex-col gap-10 rounded-lg border border-gray-300">
       <div className="flex flex-col gap-4">
+      <h1 className="text-center">¡JUGUEMOS!</h1>
         <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-start p-5">
           <Link to="/orange-page" className="link-wrapper">
             <div className="image-link bg-orange-500 hover:bg-orange-700 flex items-center justify-center w-28 h-28 text-white font-bold rounded-full">

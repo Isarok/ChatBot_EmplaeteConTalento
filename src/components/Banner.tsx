@@ -4,9 +4,9 @@ import GameCategories from "./GameCategories";
 const Banner = () => {
   return (
     <section
-      className="w-full pt-10 pb-20 flex flex-col gap-10 xl:gap-0 lgl:flex-row items-center font-titleFont"
+      className="w-full items-center"
     >
-      <div className="flex flex-col xl:flex-row gap-10">
+      <div className="flex flex-col xl:flex-row lgl:flex-row lg:flex-row gap-3">
         <LeftBanner />
         <GameCategories />
       </div>
