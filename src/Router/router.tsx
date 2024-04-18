@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../Pages/Home";
 import GameCard from "../Pages/GameCard";
 import GameMillonaire from "../Pages/GameMillonaire";
-import Contact from "../Components/Contact";
+import ContactPage from "../Pages/ContactPage";
 import "../index.css";
 
 export const router = createBrowserRouter([
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
     element: <GameMillonaire />,
   },
   {
-    path: "/contact",
-    element: <Contact />,
-  },
+    path: "/ContactPage",
+    element: <ContactPage />,
+}
 ]);
