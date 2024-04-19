@@ -9,3 +9,7 @@ body {
   background: #1b1523;
   color: #fff;
 }
+
+.custom-width {
+  width: 90%;
+}

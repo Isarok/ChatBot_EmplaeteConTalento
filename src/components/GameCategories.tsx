@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 const Games = () => {
   return (
-    <section className="font-sans lgl:w-1/3 lg:w-1/2 backdrop-blur-2xl pt-5 flex flex-col gap-10 rounded-lg border border-gray-300">
-      <div className="flex flex-col gap-4">
-      <h1 className="text-center">¡JUGUEMOS!</h1>
+    <section className="font-sans lgl:w-1/3 lg:w-1/2 backdrop-blur-2xl pt-5 flex flex-col rounded-lg border border-gray-300">
+      <div className="flex flex-col gap-3">
+      <h1 className="text-center">¿PREPARAD@?</h1>
         <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-start p-5">
           <Link to="/orange-page" className="link-wrapper">
-            <div className="image-link bg-orange-500 hover:bg-orange-700 flex items-center justify-center w-28 h-28 text-white font-bold rounded-full">
+            <div className="image-link bg-red-700 hover:bg-red-600 flex items-center justify-center w-28 h-28 text-white font-bold rounded-full border-2 border-red-800">
               <img src={Empleabilidad} alt="" className="w-1/2 h-1/2" />
             </div>
           </Link>
@@ -21,7 +21,7 @@ const Games = () => {
         </div>
         <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-start p-5">
           <Link to="/blue-page" className="link-wrapper">
-            <div className="image-link bg-blue-500 hover:bg-blue-700 flex items-center justify-center w-28 h-28 text-white font-bold rounded-full">
+            <div className="image-link bg-red-700 hover:bg-red-600 flex items-center justify-center w-28 h-28 text-white font-bold rounded-full border-2 border-red-800">
               <img src={Formacion} alt="" className="w-1/2 h-1/2" />
             </div>
           </Link>
@@ -32,7 +32,7 @@ const Games = () => {
         </div>
         <div className="flex flex-col items-center sm:flex-row sm:items-start sm:justify-start p-5">
           <Link to="/green-page" className="link-wrapper">
-            <div className="image-link bg-green-500 hover:bg-green-700 flex items-center justify-center w-28 h-28 text-white font-bold rounded-full">
+            <div className="image-link bg-red-700 hover:bg-red-600 flex items-center justify-center w-28 h-28 text-white font-bold rounded-full border-2 border-red-800">
               <img src={Emprendimiento} alt="" className="w-1/2 h-1/2" />
             </div>
           </Link>
