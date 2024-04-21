@@ -46,11 +46,6 @@ body {
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  color: #f3f3f3;
-  text-align: center;
-  font-size: large;
-  box-shadow: 0 5px 10px #000;
-  border-radius: 10px;
   opacity: 90%;
 }
 

@@ -34,10 +34,10 @@ const Card: React.FC<{ title: string; description: string; image: string }> = ({
         <img src={image} alt={title} />
         <h2 className='text-2xl font-bold '>{title}</h2>
       </figure>
-      <div className="face back w-full h-full p-2 overflow-hidden  transform perspective-600 rotate-y-180 "
+      <div className="face back w-full h-full p-2 overflow-hidden transform perspective-600 rotate-y-180 "
           style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-          <div className='backdrop-blur-sm  from-black to-transparent  bg-black bg-opacity-70  w-full h-full '>
+          <div className='backdrop-blur-sm rounded-md text-center text-white  from-black to-transparent  bg-black bg-opacity-70  w-full h-full '>
              <div className="flex flex-col justify-center items-center">
               
               <h2 className='text-1xl font-bold p-2'>{title}</h2>
