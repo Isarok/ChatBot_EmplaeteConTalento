@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "../../Components/Card";
 import Banner from "../../Components/Banner/Index";
-import { getAllCards } from "../../Services/gameCard.service";
+import { getAllCards } from "../../Services/gameCard.service.ts";
 import { Competencia } from "../../../Interfaces/cardInterfaces.ts";
 
 const Game: React.FC = () => {

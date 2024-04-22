@@ -1,5 +1,5 @@
 import Nav from "../../Components/Nav";
-import Banner from "../../Components/Banner";
+import Banner from "../../Components/LPBanner";
 import backgroundImage from "../../assets/BackgroundImg.jpeg"; 
 // import Games from "../../components/GameCategories"
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from 'react-router-dom';
 import { FaTimes } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
 import Logo from "../assets/LOGO.png";
@@ -9,9 +9,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="w-full h-24 sticky top-0 z-50 backdrop-blur-2xl transition-colors mx-auto flex justify-between items-center border-b-[1px] px-20">
-      <Link spy={true} smooth={true} to="Home">
         <img src={Logo} alt="logo" style={{ width: "130px", height: "auto", cursor: "pointer",  borderRadius: '15px'}} />
-      </Link>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
@@ -42,9 +40,7 @@ const Navbar = () => {
           <div className="w-[80%] h-screen mdl:hidden overflow-scroll absolute top-0 left-0 bg-red-800/95 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
-                <Link spy={true} smooth={true} to="Home">
                 <img className="w-36 cursor-pointer rounded-md" src={Logo} alt="logo" />
-                </Link>
                 <p className="text-sm text-white mt-2">
                 ¿Preparad@ para descubrir tus super talentos? Explora tus capacidades ocultos con nuestros juegos interactivos.
                 </p>
