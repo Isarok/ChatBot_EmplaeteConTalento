@@ -27,31 +27,27 @@ const Card: React.FC<Competencia> = ({ title, description, image }) => {
   }, [title, description, image]); // Dependencia actualizada para que useEffect se ejecute cuando cambien title, description o image
 
   return (
-    <section>
-      <div className="w-full max-w-xl p-4 md:w-3/4 lg:w-1/2">
-        <div className="w-40 h-62 cursor-pointer card">
-          <figure className="face front  ">
-            <img src={image} alt={title} />
-            <h2 className="text-2xl font-bold ">{title}</h2>
-          </figure>
-          <div
-            className="face back w-full h-full p-4 rounded-lg overflow-hidden bg-blue-900 transform perspective-600 rotate-y-180 "
-            style={{
-              backgroundImage: `url(${image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="backdrop-blur-sm  from-black to-transparent  bg-black bg-opacity-70  w-full h-full ">
-              <div className="flex flex-col justify-center items-center">
-                <h2 className="text-2xl font-bold p-4">{title}</h2>
-                <p className="text-[10px] justify-center items-center">
-                  {description}
-                </p>
-              </div>
-            </div>
+
+    <section >
+      <div className="w-full max-w-xl md:w-3/4 lg:w-1/2">
+    <div className="w-40 h-62 cursor-pointer card">
+        <figure className="face front  ">
+        <img src={image} alt={title} />
+        <h2 className='text-2xl font-bold '>{title}</h2>
+      </figure>
+      <div className="face back w-full h-full p-2 overflow-hidden transform perspective-600 rotate-y-180 "
+          style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        >
+          <div className='backdrop-blur-sm rounded-md text-center text-white  from-black to-transparent  bg-black bg-opacity-70  w-full h-full '>
+             <div className="flex flex-col justify-center items-center">
+              
+              <h2 className='text-1xl font-bold p-2'>{title}</h2>
+              <p className="text-[12px] p-1 justify-center items-center">{description}</p>
+        
+             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

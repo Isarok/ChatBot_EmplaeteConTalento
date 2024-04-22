@@ -29,11 +29,13 @@ const Game: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-wrap justify-around">
+    <div className="bg-blue-950 flex flex-wrap justify-between">
+      
+
       {/* Cards a la izquierda */}
       <div className="w-[65%] md:-\[65\%\] flex flex-wrap md:flex-wrap lg:flex">
         {competencias.map((competencia) => (
-          <div key={competencia.title} className="w-full md:w-1/4 p-2">
+          <div key={competencia.title} className="w-full md:w-1/4">
             <Card
               title={competencia.title}
               description={competencia.description}
@@ -48,7 +50,7 @@ const Game: React.FC = () => {
       </div>
 
       {selectedCompetencia && (
-        <div className="w-full p-4">
+        <div className="">
           <h2>Competencia Seleccionada:</h2>
           <p>{selectedCompetencia.title}</p>
           <p>{selectedCompetencia.description}</p>
