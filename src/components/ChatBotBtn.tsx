@@ -2,7 +2,7 @@ const ChatBtn = () => {
     return (
       <section className="flex justify-center">
         <div className="custom-width font-sans p-8 backdrop-blur-2xl flex flex-col rounded-full border border-gray-300">
-          <div className="flex flex-col lg:flex-row lgl:flex-row justify-between items-center">
+          <div className="flex flex-col lg:flex-row lgl:flex-row justify-between items-center gap-5">
             <p className="lg:text-left lgl:text-left max-w-md text-2xl font-sans font-bold text-white"
               style={{ textShadow: '0 0 6px #1A1E6B' }}>
               ¿Quieres saber más? Despeja tus dudas con nuestro SuperBot
