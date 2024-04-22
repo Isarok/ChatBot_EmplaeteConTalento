@@ -1,23 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import Card from '../../Components/Card';
-import Banner from '../../Components/Banner/Index';
-
-interface Competencia {
-  title: string;
-  description: string;
-  image: string;
-  onClick?: () => void;
-}
+import React, { useState, useEffect } from "react";
+import Card from "../../Components/Card";
+import Banner from "../../Components/Banner/Index";
+import { getAllCards } from "../../Services/gameCard.service";
+import { Competencia } from "../../../Interfaces/cardInterfaces.ts";
 
 const Game: React.FC = () => {
   const [competencias, setCompetencias] = useState<Competencia[]>([]);
-  const [selectedCompetencia, setSelectedCompetencia] = useState<Competencia | null>(null);
+  const [selectedCompetencia, setSelectedCompetencia] =
+    useState<Competencia | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:3001/competencias');
-      const data = await response.json();
-      setCompetencias(data);
+      try {
+        const response = await getAllCards();
+        const data = response.results;
+        setCompetencias(data);
+      } catch (error) {
+        console.log("Error al traer cards:", error);
+        throw error;
+      }
     };
 
     fetchData();
@@ -29,8 +30,6 @@ const Game: React.FC = () => {
 
   return (
     <div className="flex flex-wrap justify-around">
-      
-
       {/* Cards a la izquierda */}
       <div className="w-[65%] md:-\[65\%\] flex flex-wrap md:flex-wrap lg:flex">
         {competencias.map((competencia) => (

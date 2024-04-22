@@ -1,6 +1,9 @@
 import axios from "axios";
+/* import { API_URL } from "../../config.ts";
+ */
 
-const API_URL = "http://localhost:3006/api";
+const API_URL =
+  "https://empleatecontalentobackend-production.up.railway.app/api";
 
 export const register = async (
   name: string,
@@ -40,7 +43,7 @@ export const login = async (email: string, password: string) => {
     console.log(response.data);
     return response;
   } catch (error) {
-    console.log("Error en el registro:", error);
+    console.log("Error en el login:", error);
     throw error;
   }
 };
@@ -54,4 +57,15 @@ export const getCurrentUser = () => {
   if (userStr) return JSON.parse(userStr);
 
   return null;
+};
+
+export const getAllUsers = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/users`);
+    console.log(response.status);
+    return response;
+  } catch (error) {
+    console.log("Error trayendo los usuarios:", error);
+    throw error;
+  }
 };
