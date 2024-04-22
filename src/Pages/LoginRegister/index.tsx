@@ -50,7 +50,7 @@ const LoginRegister = () => {
           localStorage.setItem("token", JSON.stringify({ token, user }));
           navigate("/home");
         } else {
-          console.log("Login failed?!?!?");
+          console.log("Login failed?!");
         }
       } catch (error) {
         console.log("login failed", error);
@@ -104,7 +104,7 @@ const LoginRegister = () => {
       {shouldRedirect && <Navigate to={redirectTo} />}
       <div className="bg-white p-8 rounded-xl shadow-md w-4/5 md:w-1/2 lg:w-1/3 ">
         <h1 className="text-2xl mb-4 text-red-700 text-center">
-          {isLogin ? "Login" : "Register"}
+          {isLogin ? "Login" : "Registro"}
         </h1>
         <form onSubmit={handleSubmit}>
           {!isLogin && (
@@ -113,7 +113,7 @@ const LoginRegister = () => {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700"
               >
-                Name
+                Nombre
               </label>
               <input
                 type="text"
@@ -130,7 +130,7 @@ const LoginRegister = () => {
               htmlFor="email"
               className="block text-sm font-medium text-gray-700"
             >
-              Email
+              Correo
             </label>
             <input
               type="email"
@@ -145,7 +145,7 @@ const LoginRegister = () => {
               htmlFor="password"
               className="block text-sm font-medium text-gray-700"
             >
-              Password
+              Contraseña
             </label>
             <input
               type="password"
@@ -161,13 +161,13 @@ const LoginRegister = () => {
             type="submit"
             className="w-full  text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline bg-red-700 hover:bg-red-600"
           >
-            {isLogin ? "Log In" : "Sign Up"}
+            {isLogin ? "Login" : "Regístrate"}
           </button>
         </form>
         <p className="text-gray-800 mt-4 text-sm text-center">
-          {isLogin ? "Don't have an account? " : "Already have an account? "}
+          {isLogin ? "¿Eres nuevo? " : "¿Ya estás registrado? "}
           <span className="text-blue-500 cursor-pointer" onClick={toggleForm}>
-            {isLogin ? "Sign Up" : "Log In"}
+            {isLogin ? "Regístrate" : "Login"}
           </span>
         </p>
       </div>
