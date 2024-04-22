@@ -6,7 +6,7 @@ export const navLinksdata = [
     },
     {
       _id: 1002,
-      title: "SIGN UP",
-      link: "Sign Up",
+      title: "REGÍSTRATE",
+      link: "Regístrate",
     },
   ];

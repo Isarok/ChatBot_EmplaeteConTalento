@@ -45,15 +45,15 @@ const Navbar = () => {
                 <Link spy={true} smooth={true} to="Home">
                 <img className="w-36 cursor-pointer rounded-md" src={Logo} alt="logo" />
                 </Link>
-                <p className="font-mono text-sm text-white mt-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="text-sm text-white mt-2">
+                ¿Preparad@ para descubrir tus super talentos? Explora tus capacidades ocultos con nuestros juegos interactivos.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (
                   <li
                     key={item._id}
-                    className="font-mono text-blue-600 tracking-wide cursor-pointer hover:text-blue-800 duration-300"
+                    className="text-blue-600 tracking-wide cursor-pointer hover:text-blue-800 duration-300"
                   >
                     <Link
                       onClick={() => setShowMenu(false)}
