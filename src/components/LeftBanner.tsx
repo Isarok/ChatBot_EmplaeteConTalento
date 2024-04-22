@@ -3,7 +3,7 @@ import SuperBot from "./SuperBot";
 const LeftBanner = () => {
   return (
     <section className="w-full lgl:w-1/2 flex flex-col p-10 gap-10">
-      <div className="flex flex-col gap-3 pl-10 sm:pl-0">
+      <div className="flex flex-col gap-3">
         <h1 className="text-5xl font-sans font-bold text-white"
           style={{ textShadow: '0 0 6px #1A1E6B, 0 0 6px #1A1E6B, 0 0 6px #1A1E6B' }}>
           DESCUBRE TUS SUPER TALENTOS
