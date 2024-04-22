@@ -47,6 +47,7 @@ export const Question = () => {
     <>
       {showResult ? (
         <Result score={score} totalQuestions={0} onReset={function (): void {
+            console.log(score);
                   throw new Error('Function not implemented.');
               } } puntuacion={0} pregunta={''} mensaje={''} />
       ) : (

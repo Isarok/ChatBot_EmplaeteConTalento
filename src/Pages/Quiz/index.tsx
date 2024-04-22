@@ -26,7 +26,7 @@ const Quiz: React.FC = () => {
       return "¡Enhorabuena! Tienes sólidas competencias para emprender...";
     } else if (puntuacion >= 46 && puntuacion <= 59) {
       return "Tienes un buen potencial emprendedor...";
-    } else {
+    } else { (puntuacion >= 26 && puntuacion <= 45)
       return "Esto sugiere que puedes necesitar trabajar en desarrollar algunas competencias clave...";
     }
   };
