@@ -1,0 +1,155 @@
+{
+    "preguntas": [
+      {
+        "pregunta": "¿Cómo describirías tu nivel de pasión y vocación por tu área de trabajo?",
+        "opciones": [
+          "Muy apasionado/a y comprometido/a, siempre estoy buscando nuevas formas de ser creativo/a e innovador/a.",
+          "Bastante apasionado/a, aunque a veces necesito inspiración para mantener mi creatividad.",
+          "Tengo interés en mi área de trabajo, pero no siempre encuentro la motivación para ser creativo/a e innovador/a.",
+          "No siento mucha pasión ni vocación por mi área de trabajo.",
+          "No tengo interés en mi área de trabajo y no busco ser creativo/a ni innovador/a."
+        ]
+      },
+      {
+        "pregunta": "¿Qué tan perseverante y tenaz eres cuando te enfrentas a desafíos?",
+        "opciones": [
+          "Muy perseverante, no me rindo fácilmente y siempre busco soluciones.",
+          "Bastante perseverante, aunque a veces me cuesta mantenerme motivado/a.",
+          "A veces me desanimo frente a los desafíos, pero siempre intento seguir adelante.",
+          "No suelo ser perseverante, me rindo fácilmente ante los obstáculos.",
+          "Me resulta difícil mantener la perseverancia y la tenacidad frente a los desafíos."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo sueles manejar los momentos de incertidumbre y dificultades?",
+        "opciones": [
+          "Mantengo una mentalidad positiva y confío en mi capacidad para superar cualquier obstáculo.",
+          "Aunque a veces me siento preocupado/a, trato de mantener una actitud optimista y proactiva.",
+          "Me cuesta mantener una mentalidad positiva frente a la incertidumbre y las dificultades.",
+          "Suelo preocuparme mucho y tengo dificultades para ver el lado positivo de las cosas.",
+          "Me resulta imposible mantener una mentalidad positiva frente a las dificultades."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo tomas decisiones importantes?",
+        "opciones": [
+          "Con determinación y confianza en mis habilidades para resolver problemas.",
+          "Después de analizar cuidadosamente todas las opciones disponibles.",
+          "A veces me cuesta tomar decisiones importantes, pero confío en mi instinto.",
+          "Evito tomar decisiones importantes y prefiero dejarlas en manos de otros.",
+          "Suelo tomar decisiones impulsivas sin considerar todas las opciones."
+        ]
+      },
+      {
+        "pregunta": "¿Cuánto tiempo dedicas a aprender nuevas habilidades o conocimientos relevantes?",
+        "opciones": [
+          "Dedico tiempo semanalmente a aprender cosas nuevas.",
+          "Intento aprender cosas nuevas cuando tengo la oportunidad.",
+          "Solo aprendo cuando es necesario para resolver un problema específico o hacer algo.",
+          "No suelo buscar oportunidades de aprendizaje.",
+          "No me interesa aprender cosas nuevas."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo calificarías tu capacidad para gestionar tu tiempo, planificar y organizar tus actividades?",
+        "opciones": [
+          "Muy buena, siempre tengo un plan claro y me organizo eficientemente.",
+          "Buena, aunque a veces me cuesta mantenerme organizado/a.",
+          "Regular, suelo tener dificultades para planificar y organizar mis tareas.",
+          "Pobre, siempre me siento desorganizado/a y desbordado/a.",
+          "Muy pobre, no tengo ningún sistema de planificación ni organización."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo te desenvuelves en situaciones de comunicación, tanto verbal como no verbal, en el ámbito profesional?",
+        "opciones": [
+          "Excelentemente, tengo habilidades de comunicación destacadas y me relaciono bien con los demás.",
+          "Buena, aunque a veces me cuesta expresarme claramente.",
+          "Regular, a veces me siento incómodo/a en situaciones sociales.",
+          "Pobre, tengo dificultades para comunicarme efectivamente y relacionarme con los demás.",
+          "Muy pobre, me resulta casi imposible relacionarme con los demás."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo te desenvuelves en situaciones de negociación y persuasión relacionadas?",
+        "opciones": [
+          "Excelentemente, suelo lograr los resultados deseados en las negociaciones.",
+          "Bien, aunque a veces me cuesta convencer a los demás.",
+          "Regular, no siempre logro persuadir a los demás según mis objetivos.",
+          "Pobre, me resulta difícil negociar y persuadir a otros.",
+          "Muy pobre, no tengo habilidades de negociación ni persuasión."
+        ]
+      },
+      {
+        "pregunta": "¿Te consideras un buen líder?",
+        "opciones": [
+          "Sí, tengo habilidades de liderazgo sólidas y sé cómo motivar.",
+          "En general, sí, aunque a veces me cuesta encontrar el equilibrio entre liderar y colaborar.",
+          "Normal, aunque a veces me cuesta tomar decisiones difíciles como líder.",
+          "No, tengo dificultades para liderar.",
+          "No me interesa ser líder."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo describirías tu capacidad para trabajar en equipo?",
+        "opciones": [
+          "Excelente, sé cómo colaborar efectivamente con otros para alcanzar objetivos comunes.",
+          "Buena, aunque a veces me cuesta trabajar en equipo debido a diferencias de opinión.",
+          "Normal, a veces me cuesta comunicarme y colaborar con otros.",
+          "Pobre, tengo dificultades para trabajar en equipo y suelo preferir trabajar solo/a.",
+          "Muy pobre, no me gusta trabajar en equipo y evito hacerlo siempre que sea posible."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo te relacionas con tu entorno profesional?",
+        "opciones": [
+          "Mantengo relaciones sólidas y constructivas con otros profesionales y empresas.",
+          "En general, me relaciono bien con mi entorno profesional, aunque a veces tengo conflictos.",
+          "Normal, aunque a veces me cuesta establecer y mantener relaciones profesionales.",
+          "Tengo dificultades para relacionarme con otros en mi entorno profesional.",
+          "No me interesa relacionarme con mi entorno profesional."
+        ]
+      },
+      {
+        "pregunta": "¿Qué tan importante crees que es entender las necesidades y emociones de los demás en el ámbito profesional?",
+        "opciones": [
+          "Muy importante, la empatía es fundamental para el éxito y conocer así las necesidades de clientes, etc.",
+          "Importante, aunque a veces me cuesta ponerme en el lugar de los demás.",
+          "Normal, a veces me preocupo más por mis propias necesidades.",
+          "No tan importante, creo que lo importante es enfocarse en alcanzar objetivos.",
+          "No creo que sea importante entender las necesidades y emociones de los demás."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo describirías tu capacidad para practicar la escucha activa en tus interacciones profesionales?",
+        "opciones": [
+          "Excelente, siempre estoy atento/a a las necesidades y preocupaciones de los demás.",
+          "Buena, aunque a veces me cuesta mantener la concentración durante las conversaciones.",
+          "Regular, a veces me distraigo fácilmente durante las conversaciones.",
+          "Pobre, suelo interrumpir a las personas o perder el hilo de la conversación.",
+          "Muy pobre, no suelo prestar atención a lo que dicen los demás."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo te consideras en términos de adaptabilidad y flexibilidad en entornos profesionales cambiantes?",
+        "opciones": [
+          "Muy adaptable, me siento cómodo/a ajustándome a nuevas situaciones y desafíos.",
+          "Bastante adaptable, aunque a veces me cuesta adaptarme rápidamente a los cambios.",
+          "A veces me cuesta adaptarme a cambios inesperados, pero trato de hacerlo lo mejor posible.",
+          "Tengo dificultades para adaptarme a nuevas situaciones y cambios en el entorno profesional.",
+          "Me resulta imposible adaptarme a cambios y prefiero la estabilidad."
+        ]
+      },
+      {
+        "pregunta": "¿Cómo manejas las críticas y retroalimentaciones negativas?",
+        "opciones": [
+          "Las veo como oportunidades para aprender y mejorar.",
+          "Aunque me duelen, trato de tomarlas de manera constructiva.",
+          "A veces me cuesta manejar críticas y retroalimentaciones negativas, pero trato de no dejar que me afecten.",
+          "Suelo sentirme frustrado/a o enojado/a ante las críticas y retroalimentaciones negativas.",
+          "Ignoro las críticas y retroalimentaciones negativas y no las tomo en cuenta para mejorar."
+        ]
+      }
+    ]
+  }
+  

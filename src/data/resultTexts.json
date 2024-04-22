@@ -1,0 +1,32 @@
+{
+    "excellent": {
+      "title": "¡Enhorabuena!",
+      "content": [
+        "Tienes sólidas competencias para emprender.",
+        "Aunque sigue cultivando tus habilidades y trabajando en áreas de mejora como:",
+        ["Pasión – Vocación", "Creatividad, innovación e investigación", "Tenacidad, perseverancia, iniciativa y proactividad", "Mentalidad positiva y confianza en uno mismo", "Orientación al logro, resolución y capacidad de decisión", "Capacidad de aprendizaje y autoaprendizaje", "Gestión del tiempo, planificación y organización", "Comunicación verbal, no verbal y digital", "Negociación y persuasión", "Liderazgo", "Trabajo en equipo", "Capacidad para relacionarse con el entorno", "Habilidades interpersonales, como la Empatía, la escucha activa o la asertividad"],
+        "para alcanzar aún más éxito en tu camino emprendedor."
+      ]
+    },
+    "good": {
+      "title": "Tienes un buen potencial emprendedor",
+      "content": [
+        "Con dedicación y esfuerzo, puedes alcanzar tus metas emprendedoras.",
+        "Hay áreas en las que puedes mejorar como:",
+        ["Pasión – Vocación", "Creatividad, innovación e investigación", "Tenacidad, perseverancia, iniciativa y proactividad", "Mentalidad positiva y confianza en uno mismo", "Orientación al logro, resolución y capacidad de decisión", "Capacidad de aprendizaje y autoaprendizaje", "Gestión del tiempo, planificación y organización", "Comunicación verbal, no verbal y digital", "Negociación y persuasión", "Liderazgo", "Trabajo en equipo", "Capacidad para relacionarse con el entorno", "Habilidades interpersonales, como la Empatía, la escucha activa o la asertividad"],
+        "para lograr tus objetivos profesionales."
+      ]
+    },
+    "needsImprovement": {
+      "title": "Esto sugiere que puedes necesitar trabajar en desarrollar algunas competencias clave para el emprendimiento.",
+      "content": [
+        "Es importante identificar tus áreas de mejora y buscar oportunidades para aprender y crecer.",
+        "Con determinación y compromiso, aún puedes desarrollar las habilidades necesarias para tener éxito como emprendedor.",
+        "¡No te desanimes y sigue adelante!",
+        "Puedes centrarte en mejorar áreas como:",
+        ["Pasión – Vocación", "Creatividad, innovación e investigación", "Tenacidad, perseverancia, iniciativa y proactividad", "Mentalidad positiva y confianza en uno mismo", "Orientación al logro, resolución y capacidad de decisión", "Capacidad de aprendizaje y autoaprendizaje", "Gestión del tiempo, planificación y organización", "Comunicación verbal, no verbal y digital", "Negociación y persuasión", "Liderazgo", "Trabajo en equipo", "Capacidad para relacionarse con el entorno", "Habilidades interpersonales, como la Empatía, la escucha activa o la asertividad"],
+        "para lograr tus objetivos profesionales."
+      ]
+    }
+  }
+  

@@ -4,6 +4,7 @@ import GameCard from "../Pages/GameCard";
 import GameMillonaire from "../Pages/GameMillonaire";
 import '../index.css';
 import LoginRegister from "../Pages/LoginRegister";
+import Quiz from "../Pages/Quiz";
 
 export const router = createBrowserRouter([
   {
@@ -21,5 +22,9 @@ export const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginRegister />,
+  },
+  {
+    path: "/Quiz",
+    element: <Quiz />,
   },
 ]);
