@@ -1,4 +1,4 @@
-import SuperBot from "./SuperBot";
+import SuperBot from "../BotIcon";
 
 const LeftBanner = () => {
   return (

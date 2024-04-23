@@ -1,6 +1,6 @@
-import Empleabilidad from "../assets/empleabilidad.png";
-import Emprendimiento from "../assets/emprendimiento.png";
-import Formacion from "../assets/formacion.png";
+import Empleabilidad from "../../assets/empleabilidad.png";
+import Emprendimiento from "../../assets/emprendimiento.png";
+import Formacion from "../../assets/formacion.png";
 import { Link } from "react-router-dom";
 
 const Games = () => {
