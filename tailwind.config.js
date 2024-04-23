@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       screens: {
@@ -16,7 +13,17 @@ export default {
         lgl: "1024px",
         xl: "1280px",
       },
+
+      animation: {
+        float: "float 3s infinite alternate",
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+      },
     },
   },
   plugins: [],
-}
+};
