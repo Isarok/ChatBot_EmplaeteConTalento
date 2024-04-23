@@ -29,8 +29,8 @@ const Card: React.FC<Competencia> = ({ title, description, image }) => {
   return (
 
     <section >
-      <div className="w-full max-w-xl md:w-3/4 lg:w-1/2">
-    <div className="w-40 h-62 cursor-pointer card">
+      <div className="w-full max-w-xl sm:m-0 md:m-0 md:py-5 md:px-5 sm:w-1/2  md:w-3/4 lg:w-1/2">
+    <div className="w-40 h-62 cursor-pointer  card ">
         <figure className="face front  ">
         <img src={image} alt={title} />
         <h2 className='text-2xl font-bold '>{title}</h2>

@@ -3,6 +3,7 @@ import Card from "../../Components/Card";
 import Banner from "../../Components/Banner/Index";
 import { getAllCards } from "../../Services/gameCard.service.ts";
 import { Competencia } from "../../../Interfaces/cardInterfaces.ts";
+import backgroundImage from "../../assets/BackgroundImg.jpeg";
 
 const Game: React.FC = () => {
   const [competencias, setCompetencias] = useState<Competencia[]>([]);
@@ -29,7 +30,15 @@ const Game: React.FC = () => {
   };
 
   return (
-    <div className="bg-blue-950 flex flex-wrap justify-between">
+    <div className="flex flex-col justify-between"
+      style={{ 
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: "cover", 
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      backgroundAttachment: "fixed",
+      
+      }}>
       {/* Cards a la izquierda */}
       <div className="w-[65%] md:-\[65\%\] flex flex-wrap md:flex-wrap lg:flex">
         {competencias.map((competencia) => (
@@ -43,7 +52,7 @@ const Game: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="w-full md:w-1/4 p-2">
+      <div className=" ">
         <Banner />
       </div>
 
