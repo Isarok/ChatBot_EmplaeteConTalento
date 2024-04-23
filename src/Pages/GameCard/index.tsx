@@ -30,17 +30,21 @@ const Game: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between"
+    <div className=" lg:flex lg:flex-col lg:justify-between bg-blue-950 sm:flex sm:flex-wrap sm:align-middle-center sm:justify-center" /* xs:flex xs:justify-center xs:items-center */
       style={{ 
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: "cover", 
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
       backgroundAttachment: "fixed",
+      backgroundBlendMode: "overlay",
       
       }}>
       {/* Cards a la izquierda */}
-      <div className="w-[65%] md:-\[65\%\] flex flex-wrap md:flex-wrap lg:flex">
+      <div className=" ">
+        <Banner />
+      </div>
+      <div className="w-[65%] md:-\[65\%\] lg:-\[65\%\] lg:flex lg:flex-wrap  md:flex-wrap md:flex sm:flex sm:flex-wrap ">
         {competencias.map((competencia) => (
           <div key={competencia.title} className="w-full md:w-1/4">
             <Card
@@ -52,9 +56,7 @@ const Game: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className=" ">
-        <Banner />
-      </div>
+      
 
       {selectedCompetencia && (
         <div className="">
