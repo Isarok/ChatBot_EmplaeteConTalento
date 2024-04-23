@@ -5,7 +5,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import Logo from "../assets/LOGO.png";
 import backgroundImage from "../assets/BackgroundImg.jpeg";
 
-import { navLinksdata } from "../Constants";
+
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
