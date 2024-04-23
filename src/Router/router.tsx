@@ -6,6 +6,8 @@ import "../index.css";
 import LoginRegister from "../Pages/LoginRegister";
 import App from "../Pages/App";
 
+import { CategoryPage } from "../Pages/QuizPage/CategoryPage";
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: "/GameMillonaire",
         element: <GameMillonaire />,
+      },
+      {
+        path: "/QuizPage",
+        element: <CategoryPage />,
       },
       {
         path: "/login",
