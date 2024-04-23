@@ -29,7 +29,7 @@ const Game: React.FC = () => {
   };
 
   return (
-    <div className="bg-blue-950 flex flex-wrap justify-between">
+    <div className="bg-blue-950 :">
       
 
       {/* Cards a la izquierda */}
@@ -45,7 +45,7 @@ const Game: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="w-full md:w-1/4 p-2">
+      <div className="flex flex-wrap w-full sm:w-1/4 sm:block md:w-1/4  lg:block lg:w-1/4 ">
         <Banner />
       </div>
 
