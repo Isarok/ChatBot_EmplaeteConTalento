@@ -1,4 +1,4 @@
-import profileImg from "../assets/SuperBot.png";
+import profileImg from "../../assets/SuperBot.png";
 
 const SuperBot = () => {
   return (

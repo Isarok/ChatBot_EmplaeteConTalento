@@ -1,6 +1,6 @@
-import LeftBanner from "./LeftBanner";
-import GameCategories from "./GameCategories";
-import ChatBtn from "./ChatBotBtn";
+import LeftBanner from "../LeftBanner";
+import GameCategories from "../GameCategories";
+import ChatBtn from "../ChatBotBtn";
 
 const Banner = () => {
   return (

@@ -1,4 +1,4 @@
-import Banner from "../../Components/LPBanner";
+import Banner from "../../Components/RightBanner";
 import backgroundImage from "../../assets/BackgroundImg.jpeg";
 // import Games from "../../components/GameCategories"
 
