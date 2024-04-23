@@ -79,7 +79,7 @@ const Navbar = () => {
         )}
       </div>
       <div
-        className="w-full h-24 -top-10 z-40  mx-auto border-b-[1px] px-20 absolute"
+        className="w-full h-24 top-0 z-40 backdrop-blur-2xl transition-colors mx-auto flex justify-between items-center border-b-[1px] px-20 absolute"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
