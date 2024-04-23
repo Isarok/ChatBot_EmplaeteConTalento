@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Question } from '../../Components/Quiz/Question';
 import { questions } from '../../Components/Quiz/data';
 import BackgroundImg from '../../assets/BackgroundImg.jpeg';
+import Emprendimiento from '../../assets/IconoEmprendimiento.png';
 
 
 export interface QuestionData {
@@ -65,16 +66,20 @@ export const CategoryPage: React.FC = () => {
           <div className='flex flex-col gap-5'>
 
 
-            <div className='flex justify-center items-center'>
-              <img src="" alt="" />
+          <div className='flex justify-center items-center'>
+              <img
+                src={Emprendimiento}
+                alt={'Emprendimiento'}
+                className='w-72'
+              />
             </div>
           </div>
 
           <button
-            className='text-white bg-gray-900 py-2 rounded-lg font-bold px-5 transition-all hover:bg-yellow-500 hover:text-gray-900'
+            className='text-white text-2xl bg-green-900 py-2 rounded-lg w-72 h-20 font-bold px-5 transition-all hover:bg-yellow-500 hover:text-gray-900'
             onClick={() => setActiveQuiz(true)}
           >
-            Iniciar Quiz
+            Iniciar test
           </button>
         </>
       )}

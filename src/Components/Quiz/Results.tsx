@@ -37,7 +37,7 @@ export const Results: React.FC<ResultsProps> = ({ score, onReset }) => {
       </div>
 
       <button
-        className='border bg-gray-100 text-gray-800 px-5 py-2 rounded-lg transition-all font-bold hover:bg-yellow-500 hover:text-gray-900'
+        className='border bg-gray-100 text-gray-800 px-5 py-2 rounded-lg transition-all font-bold hover:bg-green-500 hover:text-gray-900'
         onClick={onReset}
       >
         Vamos de nuevo

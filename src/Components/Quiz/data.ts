@@ -1,4 +1,3 @@
-import Emprendimiento from '../../assets/emprendimiento.png';
 
 // Interfaz para las categorías
 interface CategoryData {
@@ -19,7 +18,7 @@ interface Question {
 }
 
 // Imágenes para cada categoría
-export const imgs: string[] = [Emprendimiento];
+
 
 // Definición de las categorías
 export const categories: CategoryData = {
