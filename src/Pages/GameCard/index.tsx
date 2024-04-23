@@ -29,9 +29,7 @@ const Game: React.FC = () => {
   };
 
   return (
-    <div className="bg-blue-950 :">
-      
-
+    <div className="bg-blue-950 flex flex-wrap justify-between">
       {/* Cards a la izquierda */}
       <div className="w-[65%] md:-\[65\%\] flex flex-wrap md:flex-wrap lg:flex">
         {competencias.map((competencia) => (
