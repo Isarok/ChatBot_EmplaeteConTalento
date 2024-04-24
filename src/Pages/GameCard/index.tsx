@@ -30,7 +30,12 @@ const Game: React.FC = () => {
   };
 
   return (
-    <div className=" lg:flex lg:flex-col lg:justify-between bg-blue-950 sm:flex sm:flex-wrap sm:align-middle-center sm:justify-center" /* xs:flex xs:justify-center xs:items-center */
+    <div className=" xl:flex xl:justify-center xl:align-middle-center
+                     lg:flex lg:flex-col lg:justify-between
+                     md:flex md:flex-wrap md:justify-center md:align-middle-center 
+                     sm:flex sm:flex-wrap sm:align-middle-center sm:justify-center
+                     xs:flex xs:justify-center xs:align-middle-center
+                     bg-blue-950" 
       style={{ 
       backgroundImage: `url(${backgroundImage})`,
       backgroundSize: "cover", 
@@ -44,9 +49,13 @@ const Game: React.FC = () => {
       <div className=" ">
         <Banner />
       </div>
-      <div className="w-[65%] md:-\[65\%\] lg:-\[65\%\] lg:flex lg:flex-wrap  md:flex-wrap md:flex sm:flex sm:flex-wrap ">
+      <div className="xl:w-\[35\%\]
+                      lg:w-\[85\%\] lg:flex lg:flex-wrap  
+                      md:w-\[65\%\] md:flex md:flex-wrap  md:align-middle-center 
+                      sm:w-[75%] sm:flex sm:flex-wrap sm:items-center ">
         {competencias.map((competencia) => (
-          <div key={competencia.title} className="w-full md:w-1/4">
+          <div key={competencia.title} 
+              className="w-full md:w-1/4">
             <Card
               title={competencia.title}
               description={competencia.description}
