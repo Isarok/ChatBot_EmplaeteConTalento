@@ -49,11 +49,12 @@ export const login = async (email: string, password: string) => {
 };
 
 export const logout = () => {
-  localStorage.removeItem("user");
+  localStorage.removeItem("token");
 };
 
 export const getCurrentUser = () => {
-  const userStr = localStorage.getItem("user");
+  const userStr = localStorage.getItem("token");
+  console.log(userStr);
   if (userStr) return JSON.parse(userStr);
 
   return null;

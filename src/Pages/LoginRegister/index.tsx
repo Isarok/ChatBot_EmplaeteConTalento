@@ -25,8 +25,8 @@ const LoginRegister = () => {
   const [passwordError, setPasswordError] = useState("");
   const [nameError, setNameError] = useState("");
 
-  const [shouldRedirect, setShouldRedirect] = useState(false);
-  const [redirectTo, setRedirectTo] = useState("");
+  const shouldRedirect = false;
+  const redirectTo = ("")
 
   const toggleForm = () => {
     setEmail("");
