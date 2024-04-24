@@ -1,5 +1,4 @@
 
-
 const GameMillonaire = () => {
   return (
     <div>
