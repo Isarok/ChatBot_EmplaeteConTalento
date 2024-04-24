@@ -4,7 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
 import Logo from "../../assets/LOGO.png";
 import backgroundImage from "../../assets/BackgroundImg.jpeg";
-import { getCurrentUser, logout } from "../../Services/auth.service";
+import { getCurrentUser, logout } from "../../services/auth.service";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);

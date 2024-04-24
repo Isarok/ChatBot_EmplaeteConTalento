@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback, ChangeEvent } from "react";
 import React from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-import { login, register } from "../../Services/auth.service";
+import { login, register } from "../../services/auth.service";
 
 //sacar la validación de formulario, y submit(?)
 
