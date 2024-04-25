@@ -1,0 +1,6 @@
+{
+    "regrites": 
+    [
+        {"source":"/{.*}","destination":"/"}
+    ]
+}
