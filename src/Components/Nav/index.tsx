@@ -45,7 +45,7 @@ const Navbar = () => {
           </span>
         </div>
         {showMenu && (
-          <div className="w-[80%] h-screen mdl:hidden overflow-scroll absolute top-0 left-0 bg-red-800/95 p-4 scrollbar-hide">
+          <div className="w-[80%] h-screen mdl:hidden overflow-hidden absolute top-0 left-0 bg-red-800/95 p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-36 rounded-md" src={Logo} alt="logo" />
