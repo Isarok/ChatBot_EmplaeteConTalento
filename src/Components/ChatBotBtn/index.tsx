@@ -9,6 +9,7 @@ const ChatBtn = () => {
             </p>
             <button 
               className="text-md font-sans bg-purple-400 hover:bg-purple-500 text-white p-2 rounded-full lg:w-auto lgl:w-60 border-2 border-purple-500"
+              onClick={() => window.location.href = 'https://chat-empleate.vercel.app/'}
             >
               Chatear
             </button>
