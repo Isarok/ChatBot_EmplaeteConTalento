@@ -50,10 +50,6 @@ npm run dev ó yarn dev
 npm run dev ó yarn dev
 ```
 
-<h2>🍰 Contribution Guidelines:</h2>
-
-  
-  
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
