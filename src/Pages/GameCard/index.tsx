@@ -35,37 +35,40 @@ const Game: React.FC = () => {
                      md:flex md:flex-wrap md:justify-center md:align-middle-center 
                      sm:flex sm:flex-wrap sm:align-middle-center sm:justify-center
                      xs:flex xs:justify-center xs:align-middle-center
-                     bg-blue-950" 
-      style={{ 
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: "cover", 
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      backgroundAttachment: "fixed",
-      backgroundBlendMode: "overlay",
-      
+                     bg-blue-950"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        backgroundBlendMode: "overlay",
+
       }}>
-      {/* Cards a la izquierda */}
-      <div className=" ">
-        <Banner />
+
+      <div className="flex flex-wrap justify-center items-center w-full lg:w-5/6 md:w-3/4 ">
+
+        
+
+          <Banner />
+       
+
+        <div className="flex flex-col  sm:flex-row flex-wrap justify-center items-center w-full lg:w-3/4"
+        >
+          {competencias.map((competencia) => (
+            <div key={competencia.title}
+              className="w-full  lg:w-1/4 md:w-1/3 sm:w-1/1" >
+              <Card
+                title={competencia.title}
+                description={competencia.description}
+                image={competencia.image}
+                onClick={() => handleCardClick(competencia)}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="xl:w-\[35\%\]
-                      lg:w-\[85\%\] lg:flex lg:flex-wrap  
-                      md:w-\[85\%\] md:flex md:flex-wrap md:justify-center md:align-middle-center
-                      sm:w-[75%] sm:flex sm:flex-wrap sm:items-center ">
-        {competencias.map((competencia) => (
-          <div key={competencia.title} 
-              className="w-full lg:w-1/4 md:w-1/3 sm:w-1/1" >
-            <Card
-              title={competencia.title}
-              description={competencia.description}
-              image={competencia.image}
-              onClick={() => handleCardClick(competencia)}
-            />
-          </div>
-        ))}
-      </div>
-      
+
 
       {selectedCompetencia && (
         <div className="">
