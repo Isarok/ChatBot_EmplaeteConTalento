@@ -1,34 +1,36 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
 import Logo from "../../assets/LOGO.png";
 import backgroundImage from "../../assets/BackgroundImg.jpeg";
-import { getCurrentUser, logout } from "../../Services/auth.service";
+import { loggedIn, logout } from "../../Services/auth.service";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
-  const [currentUser, setCurrentUser] = useState(getCurrentUser());
+  const [isLoggedIn, setIsLoggedIn] = useState(loggedIn());
 
   useEffect(() => {
-    const updateUser = () => {
-      setCurrentUser(getCurrentUser());
-    };
-
-    // Add event listener to update user state when storage changes
-    window.addEventListener("storage", updateUser);
-
-    // Clean up the event listener when component unmounts
-    return () => {
-      window.removeEventListener("storage", updateUser);
-    };
+    setIsLoggedIn(loggedIn());
   }, []);
 
   const handleLogout = () => {
     logout();
+    setIsLoggedIn(false);
+    navigate("/login");
   };
 
-  console.log("currentUser:", currentUser);
+  const handleLogin = async () => {
+    try {
+      const success = await login(email, password, setIsLoggedIn); 
+      if (!success) {
+        console.error("Error occurred during login");
+      }
+    } catch (error) {
+      console.error("Error occurred during login:", error);
+    }
+  };
 
   return (
     <>
@@ -44,10 +46,12 @@ const Navbar = () => {
               <Link to="/home">INICIO</Link>
             </li>
             <li className="text-white tracking-wide text-sm font-bold transition cursor-pointer">
-              {currentUser ? (
-                <button onClick={handleLogout} className="hover:text-stone-300">LOGOUT</button>
+              {isLoggedIn ? (
+                <button onClick={handleLogout} className="hover:text-stone-300">
+                  LOGOUT
+                </button>
               ) : (
-                <Link to="/login" className="hover:text-stone-300">
+                <Link onClick={handleLogin} to="/login" className="hover:text-stone-300">
                   LOGIN
                 </Link>
               )}
@@ -75,10 +79,12 @@ const Navbar = () => {
                   <Link to="/home">INICIO</Link>
                 </li>
                 <li className="text-white tracking-wide text-sm font-bold transition cursor-pointer">
-                  {currentUser ? (
-                    <button onClick={handleLogout} className="hover:text-stone-300">LOGOUT</button>
+                  {isLoggedIn ? (
+                    <button onClick={handleLogout} className="hover:text-stone-300">
+                      LOGOUT
+                    </button>
                   ) : (
-                    <Link to="/login" className="hover:text-stone-300">
+                    <Link onClick={handleLogin} to="/login" className="hover:text-stone-300">
                       LOGIN
                     </Link>
                   )}

@@ -5,6 +5,7 @@ import axios from "axios";
 const API_URL =
   "https://empleatecontalentobackend-production.up.railway.app/api";
 
+  
 export const register = async (
   name: string,
   email: string,
@@ -24,6 +25,7 @@ export const register = async (
 };
 
 interface LoginResponse {
+  sesiondata: {
   token: string;
   user: {
     id: number;
@@ -31,9 +33,14 @@ interface LoginResponse {
     email: string;
     role: number;
   };
+};
 }
 
-export const login = async (email: string, password: string) => {
+export const loggedIn = () => {
+  return !!localStorage.getItem("token");
+};
+
+export const login = async (email: string, password: string, setIsLoggedIn: Function) => {
   try {
     const response = await axios.post<LoginResponse>(`${API_URL}/login`, {
       email,
@@ -42,9 +49,14 @@ export const login = async (email: string, password: string) => {
     console.log(response.status);
     console.log(response.data);
 
-    localStorage.setItem("token", JSON.stringify(response.data.token))
-
-    return response;
+    // Check if login is successful and update isLoggedIn state
+    if (response.status === 200) {
+      localStorage.setItem("token", JSON.stringify(response.data.sesiondata.token));
+      setIsLoggedIn(true); // Update isLoggedIn state
+      return true;
+    } else {
+      return false;
+    }
   } catch (error) {
     console.log("Error en el login:", error);
     throw error;
@@ -57,9 +69,8 @@ export const logout = () => {
 
 export const getCurrentUser = () => {
   const userStr = localStorage.getItem("token");
+  console.log(userStr)
   if (userStr) return JSON.parse(userStr);
-
-  return null;
 };
 
 export const getAllUsers = async () => {
