@@ -28,7 +28,7 @@ export const Question: React.FC<QuestionProps> = ({
   const [totalScore, setTotalScore] = useState<number>(0);
   const [currentScore, setCurrentScore] = useState<number>(0);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number | null>(null);
-  const [answered, setAnswered] = useState<boolean>(false);
+/*   const [answered, setAnswered] = useState<boolean>(false); */
   const [answersRandom, setAnswersRandom] = useState<string[]>([]);
   const [activeResults, setActiveResults] = useState<boolean>(false);
 
@@ -56,7 +56,7 @@ export const Question: React.FC<QuestionProps> = ({
   const selectAnswer = (answerText: string, index: number) => {
     setCurrentScore(calculateCurrentScore(answerText));
     setSelectedAnswerIndex(index);
-    setAnswered(true);
+/*     setAnswered(true); */
   };
 
   const onNextQuestion = () => {
@@ -64,7 +64,7 @@ export const Question: React.FC<QuestionProps> = ({
     setCurrentScore(0);
     setIndexQuestion(indexQuestion + 1);
     setSelectedAnswerIndex(null);
-    setAnswered(false);
+    /* setAnswered(false); */
   };
 
   const onReset = () => {
