@@ -1,30 +1,65 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">Empleate con talento</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="justify">Bienvenido a Talent Discovery Hub tu plataforma educativa interactiva diseñada para impulsar tu desarrollo profesional y personal. Con una combinación única de chatbot juegos y evaluaciones descubre y potencia tus habilidades intereses y metas laborales. Características Principales Chatbot Asesor Inicia una conversación con nuestro chatbot inteligente que te recomendará enlaces útiles para emprendimiento formación y búsqueda de empleo. Al finalizar recibirás un resumen por correo electrónico. Juegos Interactivos Quiz de Currículum Vitae: ¡Adaptado al estilo de "¿Quién quiere ser millonario?" este juego te reta a responder preguntas sobre cómo mejorar tu CV! Descubre tus Competencias Profesionales: Voltea las cartas para revelar cómo tus hobbies refuerzan diversas competencias laborales. Quiz Sicométrico: Realiza nuestra evaluación para descubrir tus fortalezas y áreas de mejora obteniendo consejos personalizados para crecer profesionalmente.</p>
 
-Currently, two official plugins are available:
+<h2>🚀 Demo</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://empleate-con-talento-front.vercel.app/](https://empleate-con-talento-front.vercel.app/)
 
-## Expanding the ESLint configuration
+<h2>Project Screenshots:</h2>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<img src="https://res.cloudinary.com/dtppkikkr/image/upload/v1714042939/Landing_owcqdo.png" alt="project-screenshot" width="600" height="300/">
 
-- Configure the top-level `parserOptions` property like this:
+<img src="https://res.cloudinary.com/dtppkikkr/image/upload/v1714042939/QUIZ_j6cyfn.png" alt="project-screenshot" width="640" height="300/">
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<img src="https://res.cloudinary.com/dtppkikkr/image/upload/v1714042939/50_bsr94d.png" alt="project-screenshot" width="640" height="300/">
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.</p>
+
+<p>2. Prerrequisitos: Asegúrate de tener instalado Node.js y npm en tu máquina. Si aún no los tienes puedes descargarlos desde nodejs.org.</p>
+
+<p>3. Clonar el Repositorio</p>
+
+```
+git clonehttps://github.com/Isarok/EmpleateConTalentoFront.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<p>4. Navega al directorio del proyecto:</p>
+
+```
+cd tu_proyecto
+```
+
+<p>5. Instalación de Dependencias</p>
+
+```
+npm install ó yarn install
+```
+
+<p>6. Ejecutar el Proyecto</p>
+
+```
+npm run dev ó yarn dev
+```
+
+<p>7. Este comando iniciará el servidor de desarrollo y podrás ver la aplicación en tu navegador en http://localhost:3000.</p>
+
+```
+npm run dev ó yarn dev
+```
+
+<h2>🍰 Contribution Guidelines:</h2>
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   React
+*   Vite
+*   Typescript
+*   Tailwind
+*   Axios
