@@ -41,6 +41,9 @@ export const login = async (email: string, password: string) => {
     });
     console.log(response.status);
     console.log(response.data);
+
+    localStorage.setItem("token", JSON.stringify(response.data.token))
+
     return response;
   } catch (error) {
     console.log("Error en el login:", error);
@@ -49,11 +52,11 @@ export const login = async (email: string, password: string) => {
 };
 
 export const logout = () => {
-  localStorage.removeItem("user");
+  localStorage.removeItem("token");
 };
 
 export const getCurrentUser = () => {
-  const userStr = localStorage.getItem("user");
+  const userStr = localStorage.getItem("token");
   if (userStr) return JSON.parse(userStr);
 
   return null;

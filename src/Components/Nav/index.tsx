@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
@@ -8,11 +8,27 @@ import { getCurrentUser, logout } from "../../Services/auth.service";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const currentUser = getCurrentUser();
+  const [currentUser, setCurrentUser] = useState(getCurrentUser());
+
+  useEffect(() => {
+    const updateUser = () => {
+      setCurrentUser(getCurrentUser());
+    };
+
+    // Add event listener to update user state when storage changes
+    window.addEventListener("storage", updateUser);
+
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener("storage", updateUser);
+    };
+  }, []);
+
   const handleLogout = () => {
     logout();
   };
 
+  console.log("currentUser:", currentUser);
 
   return (
     <>
