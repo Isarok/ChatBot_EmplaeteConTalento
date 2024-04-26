@@ -12,10 +12,12 @@ const Home = () => {
       }}
     >
       <div
-        className="p-10 w-full h-auto"
+        className="p-12 w-full h-auto"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+
         }}
       >
         <div className="max-w-screen-xl mx-auto">

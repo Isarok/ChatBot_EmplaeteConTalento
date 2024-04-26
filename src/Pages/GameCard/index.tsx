@@ -46,18 +46,20 @@ const Game: React.FC = () => {
 
       }}>
 
-      <div className="flex flex-wrap justify-center items-center w-full lg:w-5/6 md:w-3/4 ">
+
+
+      <div className="flex flex-wrap justify-center items-center w-full lg:w-4/7 m-0 md:w-3/4 ">
+          <Banner />
 
         
 
-          <Banner />
        
 
         <div className="flex flex-col  sm:flex-row flex-wrap justify-center items-center w-full lg:w-3/4"
         >
           {competencias.map((competencia) => (
             <div key={competencia.title}
-              className="w-full  lg:w-1/4 md:w-1/3 sm:w-1/1" >
+              className="w-full space-x-4 lg:w-1/4 md:w-1/3 sm:w-1/1" >
               <Card
                 title={competencia.title}
                 description={competencia.description}
