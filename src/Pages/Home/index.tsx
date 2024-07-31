@@ -12,7 +12,8 @@ const Home = () => {
       }}
     >
       <div
-        className="p-12 w-full h-auto"
+        className="p-12 mt-8 w-full h-auto
+        2xl:p-36 2xl:fixed "
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
