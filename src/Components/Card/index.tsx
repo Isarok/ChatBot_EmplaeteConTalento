@@ -28,12 +28,12 @@ const Card: React.FC<Competencia> = ({ title, description, image }) => {
 
   return (
 
-    <section>
-      <div>
-        <div className=" 2xl:w-56 2xl:h-72
+    <section className="flex flex-col justify-center items-center  " >
+      
+        <div className=" 2xl:w-48 2xl:h-60
                          xl:w-48 xl:h-60
-                         lg:w-40 lg:h-60
-                         md:w-40 md:h-60 
+                         lg:w-40 lg:h-56
+                         md:w-36 md:h-56
                          sm:w-56 sm:h-74
                          sx:w-56 sx:h-74  
                          w-56 h-74 cursor-pointer card ">
@@ -63,7 +63,7 @@ const Card: React.FC<Competencia> = ({ title, description, image }) => {
           </div>
         </div>
       </div>
-      </div>
+      
     </section>
   );
 };

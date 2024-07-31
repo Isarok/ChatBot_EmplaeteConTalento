@@ -5,6 +5,7 @@ import GameMillonaire from "../Pages/GameMillonaire";
 import "../index.css";
 import LoginRegister from "../Pages/LoginRegister";
 import App from "../Pages/App";
+import ChatBot from "../Pages/ChatBot";
 
 import { CategoryPage } from "../Pages/QuizPage/CategoryPage";
 
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         element: <LoginRegister />,
+      },
+      {
+        path: "/chatbot",
+        element: <ChatBot />,
       },
     ],
   },

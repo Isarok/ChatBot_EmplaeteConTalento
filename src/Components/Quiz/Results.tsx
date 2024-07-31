@@ -25,10 +25,10 @@ export const Results: React.FC<ResultsProps> = ({ score, onReset }) => {
   }, [score]); // Ejecuta el efecto cada vez que 'score' cambie
  console.log(score)
   return (
-    <div className='flex flex-col text-white justify-evenly items-center shadow-xl rounded-lg w-[600px] h-[600px] gap-5 bg-gray-800 bg-opacity-80'>
+    <div className=' flex flex-col text-white justify-evenly items-center shadow-xl rounded-lg w-[100%] lg:w-[50%] h-[85%] lg: gap-5 bg-gray-800 bg-opacity-80'>
       <h1 className='text-4xl font-bold'>Resultados</h1>
 
-      <div className='flex flex-col gap-5 text-center text-lg font-bold'>
+      <div className='m-2 flex flex-col gap-5 text-center text-lg font-bold'>
         <span>Tu puntuación es:</span>
         <span className='font-black bg-gradient-to-r from-purple-500  to-pink-500 bg-clip-text text-transparente text-6xl animate-pulse'>
           {score}

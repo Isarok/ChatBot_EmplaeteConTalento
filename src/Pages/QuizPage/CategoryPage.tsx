@@ -41,14 +41,12 @@ export const CategoryPage: React.FC = () => {
 
   return (
     <div
-      className='gap-10 lg:p-10 flex flex-col w-full items-center justify-center gap-10 bg-gray-900'                      
+      className=' flex flex-col items-center justify-center bg-gray-900 min-h-screen'                      
       style={{
-        height: 'calc(100vh - 5rem)'
-        , backgroundImage: `url(${BackgroundImg})`,
+         backgroundImage: `url(${BackgroundImg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-
         backgroundBlendMode: "overlay",
       }}
     >
@@ -63,14 +61,14 @@ export const CategoryPage: React.FC = () => {
         />
       ) : (
         <>
-          <div className='flex flex-col gap-5'>
+          <div className='flex flex-col '>
 
 
           <div className='flex justify-center items-center'>
               <img
                 src={Emprendimiento}
                 alt={'Emprendimiento'}
-                className='w-72'
+                className='w-72 h-72'
               />
             </div>
           </div>
