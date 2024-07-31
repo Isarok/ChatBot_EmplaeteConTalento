@@ -41,7 +41,6 @@ const Game: React.FC = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
         backgroundBlendMode: "overlay",
 
       }}>

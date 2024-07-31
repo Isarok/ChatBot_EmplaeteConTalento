@@ -47,7 +47,6 @@ export const CategoryPage: React.FC = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-
         backgroundBlendMode: "overlay",
       }}
     >

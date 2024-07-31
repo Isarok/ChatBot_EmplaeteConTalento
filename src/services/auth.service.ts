@@ -1,6 +1,5 @@
 import axios from "axios";
-/* import { API_URL } from "../../config.ts";
- */
+
 
 const API_URL =
   "https://empleatecontalentobackend-production.up.railway.app/api";

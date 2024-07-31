@@ -28,11 +28,11 @@ const Card: React.FC<Competencia> = ({ title, description, image }) => {
 
   return (
 
-    <section className="flex flex-col justify-center items-center sm:flex-col sm:justify-center " >
+    <section className="flex flex-col justify-center items-center  " >
       
         <div className=" 2xl:w-48 2xl:h-60
-                         xl:w-40 xl:h-60
-                         lg:w-36 lg:h-56
+                         xl:w-48 xl:h-60
+                         lg:w-40 lg:h-56
                          md:w-36 md:h-56
                          sm:w-56 sm:h-74
                          sx:w-56 sx:h-74  
