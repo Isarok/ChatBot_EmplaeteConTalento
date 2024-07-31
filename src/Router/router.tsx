@@ -37,6 +37,10 @@ export const router = createBrowserRouter([
         path: "/login",
         element: <LoginRegister />,
       },
+      {
+        path: "/chatbot",
+        element: <ChatBot />,
+      },
     ],
   },
 ]);
