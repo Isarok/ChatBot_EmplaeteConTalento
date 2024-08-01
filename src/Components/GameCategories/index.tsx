@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Games = () => {
   return (
-    <section className="font-sans lgl:w-1/3 lg:w-1/2 backdrop-blur-2xl pt-5 flex flex-col rounded-lg border border-gray-300">
+    <section className="lg:w-1/3 backdrop-blur-2xl pt-5 flex flex-col rounded-lg border border-gray-300">
       <div className="flex flex-col gap-3">
         <h1 className="text-center font-bold">¿PREPARAD@?</h1>
         <div className="flex lgl:flex-row lg:flex-row md:flex-row flex-col items-center sm:items-center sm:justify-start p-5">

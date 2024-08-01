@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
 import Logo from "../../assets/LOGO.png";
-import backgroundImage from "../../assets/BackgroundImg.jpeg";
+
 import { getCurrentUser, logout } from "../../services/auth.service";
 
 const Navbar = () => {
@@ -16,18 +16,17 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full h-24 fixed top-0 z-50 backdrop-blur-2xl transition-colors mx-auto flex justify-between items-center border-b-[1px] px-20">
+      <div className="w-full h-24 fixed top-0 z-50 backdrop-blur-xl  flex justify-between items-center  px-20">
         <button>
           <img
             src={Logo}
             alt="logo"
-            style={{ width: "160px", height: "auto", borderRadius: "15px" }}
             onClick={() => window.location.href = 'https://www.empleatecontalento.es/'}
-            className="cursor-pointer"
+            className="cursor-pointer w-40 h-auto border-1 border-gray-500"
           />
         </button>
         <div className="flex items-center">
-          <ul className="hidden mdl:inline-flex items-center gap-10">
+          <ul className="hidden md:inline-flex items-center gap-10">
             <li className="text-white tracking-wide hover:text-stone-300 text-sm font-bold transition cursor-pointer">
               <Link to="/home">INICIO</Link>
             </li>
@@ -82,13 +81,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div
-        className="w-full h-24 top-0 z-40 backdrop-blur-2xl transition-colors mx-auto flex justify-between items-center border-b-[1px] px-20 absolute"
-        style={{
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: "cover",
-        }}
-      />
+
     </>
   );
 };
